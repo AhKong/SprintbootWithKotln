@@ -14,6 +14,7 @@ class DeleteApiController {
         return "$name-$age";
     }
 
+
     @DeleteMapping("/delete-mapping/name/{name}/age/{age}")
     fun deleteMappingPath(
         @PathVariable(value="name") _name : String,
